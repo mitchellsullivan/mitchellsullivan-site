@@ -15,6 +15,7 @@ django-crispy-forms = "==1.7.1"
 django-debug-toolbar = "==1.11"
 django-environ = "*"
 whitenoise = "*"
+psycopg2 = "*"
 
 
 [requires]
