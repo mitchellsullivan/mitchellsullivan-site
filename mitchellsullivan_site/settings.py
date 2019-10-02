@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-
 ]
 
 MIDDLEWARE = [
@@ -98,25 +97,19 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-
+# Internationalisation
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static/")
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_collected')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -125,17 +118,16 @@ INTERNAL_IPS = ['127.0.0.1']
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
+# Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = env('MAILGUN_SMTP_HOSTNAME')
 EMAIL_PORT = env('MAILGUN_SMTP_PORT')
 EMAIL_HOST_USER = env('MAILGUN_SMTP_USERNAME')
 EMAIL_HOST_PASSWORD = env('MAILGUN_SMTP_PASSWORD')
 EMAIL_USE_TLS = True
-
 DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
 
 # Django-Allauth Config
-
 LOGIN_REDIRECT_URL = 'home'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'home'
 
