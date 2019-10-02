@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
@@ -125,7 +126,7 @@ EMAIL_PORT = env('MAILGUN_SMTP_PORT')
 EMAIL_HOST_USER = env('MAILGUN_SMTP_USERNAME')
 EMAIL_HOST_PASSWORD = env('MAILGUN_SMTP_PASSWORD')
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
+# DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
 
 # Django-Allauth Config
 LOGIN_REDIRECT_URL = 'home'
