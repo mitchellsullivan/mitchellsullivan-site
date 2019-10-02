@@ -3,3 +3,4 @@ notes.md
 .env
 static_collected
 __pycache__
+.DS_Store
