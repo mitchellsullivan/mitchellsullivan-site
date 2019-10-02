@@ -2,3 +2,4 @@ notes.md
 .vscode
 .env
 static_collected
+__pycache__
