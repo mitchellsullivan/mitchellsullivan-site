@@ -1,6 +1,6 @@
 notes.md
 .vscode
 .env
-static_collected/
+staticfiles/
 __pycache__/
 .DS_Store
