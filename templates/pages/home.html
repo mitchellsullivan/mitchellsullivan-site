@@ -6,13 +6,105 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Check, 1, 2. Sibilance.</h1>
-    <p>
-        Portfolio site created with Python + Django, NGINX, PostgreSQL.
-        <a href="https://github.com/mitchellsullivan/mitchellsullivan-site">
-            Source on Github.
-        </a>
-    </p>
-    <img src="{% static 'images/dog.jpeg' %}" class="img-fluid" alt="dog"/>
+<div class="container">
+    <div class="resume">
+        <h2 id="david-hamp-gonsalves">Mitchell Sullivan</h2>
+        <h3 id="senior-developer-code-enthusiast">Software Developer</h3>
+        <blockquote>
+            <p>
+                <a href="https://mitchellsullivan.net">
+                    mitchellsullivan.net
+                </a>
+                <br>
+                <a href="mailto:ms@mitchellsullivan.net">
+                    ms@mitchellsullivan.net
+                </a>
+                <br>
+                +1 (601) 826-8678
+            </p>
+        </blockquote>
+        <hr>
+        <h4 id="technical">Technical Skills</h4>
+        <ul>
+            <li>
+                <strong>C#/.NET</strong>
+                <br>
+                Desktop applications with WPF and
+                web development with .NET Core.
+            </li>
+            <li>
+                <strong>Python</strong>
+                <br>
+                Django web development, algorithm practice, various hacks.
+            </li>
+            <li>
+                <strong>React Native</strong>
+                <br>
+                Have created native modules.
+            </li>
+            <li>
+                <strong>Java, Kotlin</strong>
+                <br>
+                Basic Android development, simple servlets, and miscellaneous
+                console apps. Non-negligible history with Scala and Clojure.
+            </li>
+            <li>
+                <strong>ERP, Warehousing, Manufacturing, POS</strong>
+                <br>
+                Backend application/database architecture. Programming for devices:
+                barcode scanners, thermal printers, RFID readers, etc., from
+                companies like Zebra and Honeywell.
+            </li>
+        </ul>
+        <hr>
+        <h4 id="experience">Experience</h4>
+        <p>
+        <strong>Software Engineer @ Trinity Apparel Group</strong>
+        <br>
+        January 2018 to August 2019
+        <br>
+        Ridgeland, MS and Beijing, China
+        </p>
+
+        <hr>
+        <h4 id="projects">Projects</h4>
+        <ul>
+        <li>
+            <p>
+                <strong>This Website</strong>
+                <br>
+                <a href="https://mitchellsullivan.net" class="not-printed">mitchellsullivan.net</a>
+                <br>
+                Django, Ubuntu, Nginx, PostgreSQL
+            </p>
+        </li>
+        </ul>
+        <hr>
+        <h4 id="education">Education</h4>
+        <p>
+            <strong>B.S. Computer Science @ University of Mississippi</strong>
+            <br>
+            December 2016
+            <br>
+            Oxford, MS
+            <br>
+            <i>
+                Minor: Biology (Mississippi State University, 2008 to 2012)
+            </i>
+        </p>
+        <p>
+
+        </p>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+{#    {% autoescape off %}#}
+{#        {% for p in posts %}#}
+{#            {{ p.post_text }}#}
+{#        {% endfor %}#}
+{#    {% endautoescape %}#}
 {% endblock content %}
 
